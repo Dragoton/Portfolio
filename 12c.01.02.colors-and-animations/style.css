@@ -1,0 +1,372 @@
+/* Resetter */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+html {
+  --color-primary1: #cabd91;
+  --color-primary2: #ffd451;
+  --color-secondary1: #024959;
+  --color-secondary2: #2e1b08;
+  --color-accent1: #f2ae30;
+  --color-accent2: #f09b52;
+
+  --color-darkgrey: #333335;
+  --color-lightgrey: #59595c;
+  --color-fulllightgrey: #b3b3b9;
+  --color-black: #1a1919;
+
+  --bg: var(--color-primary2);
+  --logo: var(--color-secondary1);
+  --nav: var(--color-secondary1);
+  --upButton: var(--color-secondary2);
+  --buttonText: var(--color-accent1);
+  --headerH: var(--color-primary2);
+  --headerbg: var(--color-secondary1);
+  --headGraphic: var(--color-primary1);
+  --highA: var(--color-secondary2);
+  --highDiv: var(--color-secondary1);
+  --prodGrap: var(--color-primary2);
+  --product: var(--color-secondary1);
+  --productH: var(--color-primary2);
+  --darkpartbg: var(--color-primary2);
+
+  --textA: var(--color-primary2);
+
+  --darkA: var(--color-secondary2);
+  --reqBG: var(--color-secondary1);
+  --reqH: var(--color-primary2);
+  --footBG: var(--color-accent1);
+  --footerH: var(--color-secondary1);
+  --footerA: var(--color-secondary1);
+}
+/* Fonts */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: var(--color-primary1);
+  background-color: var(--bg);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-primary2);
+  font-family: "Noto Serif Display", serif;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 1.953rem;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  color: var(--color-primary1);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--textA);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* UI Elements */
+button {
+  display: inline-block;
+  height: 3rem;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--upButton);
+  color: var(--buttonText);
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 250px;
+  height: 3rem;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  text-align: left;
+  background-color: #eee;
+  border-color: #ddd;
+  color: #222;
+}
+
+/* Menu */
+nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg);
+}
+
+nav a {
+  color: var(--nav);
+  text-decoration: none;
+}
+
+nav a.logo {
+  font-family: "Noto Serif Display", serif;
+  font-size: 1.25rem;
+  color: var(--logo);
+}
+
+nav li {
+  display: inline-block;
+  margin: 0px 1rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  min-height: 80vh;
+  padding: 5rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--headerbg);
+}
+
+header h1 {
+  color: var(--headerH);
+}
+
+header p {
+  color: var(--color-primary1);
+}
+
+header button {
+  margin-bottom: 5rem;
+}
+
+.header_text {
+  width: 30vw;
+  min-width: 300px;
+}
+
+.header_graphics {
+  width: 30vw;
+  height: 30vw;
+  min-width: 300px;
+  min-height: 300px;
+  border-radius: 300px;
+  background-color: var(--headGraphic);
+}
+
+/* product section */
+#product {
+  padding: 2rem;
+  background-color: var(--product);
+}
+
+#product h3 {
+  font-size: 1.953rem;
+  line-height: 2.5rem;
+  color: var(--productH);
+}
+
+#product article {
+  display: flex;
+  min-height: 50vh;
+  padding: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.product_text {
+  width: 50vw;
+  min-width: 300px;
+}
+
+.product_graphics {
+  width: 15vw;
+  height: 15vw;
+  min-width: 150px;
+  min-height: 150px;
+  margin: 3rem;
+  background-color: var(--prodGrap);
+  border-radius: 300px;
+}
+
+/* highlight sections */
+.highlight {
+  display: flex;
+  min-height: 70vh;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--highbg);
+}
+
+.highlight div {
+  width: 80vw;
+}
+
+.highlight a {
+  color: var(--highA);
+}
+
+.highlight div h2 {
+  font-size: 3.052rem;
+  line-height: 4rem;
+  color: var(--highDiv);
+}
+
+.dark {
+  background-color: var(--darkpartbg);
+}
+
+.dark a {
+  color: var(--darkA);
+}
+
+/* request section */
+#request {
+  display: flex;
+  min-height: 50vh;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--reqBG);
+}
+
+#request div {
+  width: 50vw;
+  min-width: 450px;
+}
+
+#request h2 {
+  color: var(--reqH);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  padding: 5vh 2rem;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--footBG);
+}
+
+footer h2,
+footer h3 {
+  color: var(--footerH);
+}
+
+footer a {
+  color: var(--footerA);
+}
+
+footer section.left {
+  display: flex;
+  max-width: 50vw;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer section div {
+  margin: 0px 1rem 1rem 1rem;
+}
+
+/*toogle dark theme*/
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  /* styling for labels */
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: var(--color-fulllightgrey);
+  float: right;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  /* styling for labels - on toggle */
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  /* conditional check while toggling */
+  background: var(--color-secondary1);
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 45px;
+}
+
+html[data-theme="dark"] {
+  --bg: var(--color-black);
+  --logo: var(--color-primary2);
+  --nav: var(--color-primary2);
+  --headerH: var(--color-fulllightgrey);
+  --upButton: var(--color-lightgrey);
+  --buttonText: var(--color-primary2);
+
+  --headerbg: var(--color-darkgrey);
+  --headGraphic: var(--color-lightgrey);
+  --highbg: var(--color-black);
+  --highDiv: var(--color-fulllightgrey);
+  --highA: var(--color-primary2);
+  --prodGrap: var(--color-lightgrey);
+  --product: var(--color-darkgrey);
+  --productH: var(--color-fulllightgrey);
+
+  --darkpartbg: var(--color-lightgrey);
+  --darkA: var(--color-primary2);
+
+  --reqBG: var(--color-darkgrey);
+  --reqH: var(--color-fulllightgrey);
+
+  --footBG: var(--color-black);
+  --footerH: var(--color-fulllightgrey);
+  --footerA: var(--color-primary2);
+}

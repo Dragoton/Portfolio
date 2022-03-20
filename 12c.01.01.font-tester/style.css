@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font-display: serif;
+    --font-paragraph: sans-serif;
+}
+
+html {
+    font-size: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-display);
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+p {
+    font-family: var(--font-paragraph);
+}
+
+p .small {
+
+}
+
+header {
+    padding: 2rem;
+}
+
+section {
+    padding: 0px 2rem;
+}
+
+.one_two_grid {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+}
+
+.one_one_one_grid {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.inline {
+    display:inline;
+}
+
+.display { 
+    font-family: var(--font-display);
+}
+
+.paragraph {
+    font-family: var(--font-paragraph);
+}
+
+.small_space {
+    height: 2rem;
+}
+
+.space {
+    height: 4rem;
+}

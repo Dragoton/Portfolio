@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
+
+/* Resetter */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+html {
+  font-size: 12px;
+}
+/* Color Properties */
+:root {
+  --color-darker: rgb(48, 48, 48);
+  --color-dark: rgb(64, 64, 64);
+  --color-light: rgb(194, 194, 194);
+  --color-lighter: rgb(255, 255, 255);
+  /* you could add an accent color for CTAs and anchor tags ;-) */
+}
+
+/* Fonts */
+h1,
+h2,
+h3 {
+  color: var(--color-darker);
+}
+
+h1 {
+  font-family: "Staatliches", cursive;
+  font-size: 4.209rem;
+  padding-bottom: 2rem;
+  max-width: 90ch;
+}
+
+h2 {
+  font-family: "Staatliches", cursive;
+  font-size: 2.369rem;
+  padding-bottom: 2rem;
+  max-width: 30ch;
+}
+
+h3 {
+  font-family: "Staatliches", cursive;
+  font-size: 1.777rem;
+}
+
+p {
+  color: var(--color-dark);
+  font-size: 1.333rem;
+  font-family: "Work Sans", sans-serif;
+  max-width: 40ch;
+  padding-bottom: 0.4rem;
+}
+
+/* UI Elements */
+button {
+  display: inline-block;
+  height: 3rem;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-darker);
+  color: var(--color-lighter);
+  padding-bottom: 3rem;
+  margin-right: 2rem;
+}
+
+.light_button {
+  background-color: var(--color-lighter);
+  color: var(--color-darker);
+  font-size: 1.414rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 250px;
+  height: 3rem;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  text-align: left;
+  background-color: var(--color-lighter);
+  border-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+/* Menu */
+nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--c);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.999rem;
+  font-family: "Work Sans", sans-serif;
+  margin-left: 1.999rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-dark);
+}
+
+.header_text {
+  width: 40vw;
+  min-width: 300px;
+}
+
+.header_text h1 {
+  color: var(--color-lighter);
+}
+
+.header_text p {
+  color: var(--color-light);
+}
+
+.header_graphics {
+  width: 35vw;
+  height: 35vw;
+  min-width: 300px;
+  min-height: 300px;
+  background-color: var(--color-darker);
+}
+
+/* Sections */
+#intro {
+  display: flex;
+  min-height: 80vh;
+  padding: 0px 15rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-light);
+}
+
+.intro_text {
+  width: 40vw;
+  min-width: 450px;
+}
+
+.intro_graphics {
+  width: 15vw;
+  height: 15vw;
+  min-width: 150px;
+  min-height: 150px;
+  background-color: var(--color-dark);
+}
+
+/*CARDS*/
+
+#card_container {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  grid-gap: 1.2rem;
+  justify-items: center;
+  margin-left: 2rem;
+}
+
+#cards {
+  min-height: 80vh;
+  padding: 5rem;
+}
+
+.card {
+  background-color: #f1eded;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.card_image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-size: cover;
+  margin-right: auto;
+}
+
+.img_container {
+  width: 20rem;
+  height: 20rem;
+}
+
+.card_name {
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+.card_title {
+  padding-left: 1rem;
+  padding-bottom: 3rem;
+}
+
+.card_mail {
+  padding-left: 1rem;
+}
+.card_mail a {
+  text-decoration: none;
+  font-size: 1.44rem;
+  color: black;
+}
+
+.card_slogan {
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.card_footer {
+  background-color: var(--color-light);
+  padding: 1.8vh 1rem;
+}
+
+.card_button_negative,
+.card_button_positive {
+  font-size: 1.333rem;
+  padding: 0.3rem;
+  background-color: white;
+  border-radius: 2px;
+}
+
+#info {
+  display: flex;
+  min-height: 80vh;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light);
+}
+
+.info_text {
+  width: 60vw;
+  min-width: 300px;
+}
+
+#contact {
+  display: flex;
+  min-height: 80vh;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  padding: 5vh 2rem;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: var(--color-darker);
+  color: var(--color-lighter);
+}
+
+footer a {
+  color: var(--color-light);
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  align-items: flex-start;
+  flex-direction: left;
+  text-decoration: none;
+}
+
+footer h2 {
+  color: white;
+  text-decoration: none;
+  font-size: 1.999rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+footer h3 {
+  font-size: 1.999rem;
+  font-family: "Work Sans", sans-serif;
+  color: var(--color-lighter);
+  padding-bottom: 2rem;
+}
+
+footer section {
+  display: flex;
+  max-width: 50vw;
+  align-items: top;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+
+footer section div {
+  margin: 0px 2rem 2rem 2rem;
+}
+
+footer div {
+  min-width: 20ch;
+}
+
+footer li {
+  margin-bottom: 1rem;
+}

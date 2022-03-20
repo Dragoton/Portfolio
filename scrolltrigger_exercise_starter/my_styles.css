@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+}
+
+#the_section {
+  background-color: antiquewhite;
+}
+
+#the_section2 {
+  background-color: burlywood;
+}
+
+div {
+  width: 10vw;
+  height: 10vw;
+}
+
+#the_div {
+  background-color: cadetblue;
+}
