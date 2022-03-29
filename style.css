@@ -24,7 +24,7 @@ html {
 }
 
 img {
-  width: 20rem;
+  width: 18rem;
 }
 a {
   font-size: var(--clamp-text);
@@ -87,6 +87,8 @@ nav li {
 
 nav ul {
   padding-right: 4rem;
+  margin-right: 0;
+  box-sizing: content-box;
 }
 
 nav a {
@@ -111,6 +113,7 @@ header {
   width: 40%;
   margin: 3rem;
   min-height: 200px;
+  min-width: 35ch;
 }
 
 .header_text h1 {
@@ -120,8 +123,7 @@ header {
 .header_graphics {
   margin-left: auto;
   margin-bottom: 0.5rem;
-  width: 40%;
-  margin: 3rem;
+  max-width: 80%;
 }
 
 .profilepic {
@@ -130,7 +132,7 @@ header {
 
 .header_graphics img {
   margin-bottom: 0.5rem;
-  width: 18rem;
+  width: 16rem;
 }
 
 nav img {
@@ -140,14 +142,15 @@ nav img {
 
 #advantages {
   background-color: var(--color-primary2);
+  padding: 1%;
 }
 
 .advantages_cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   /*grid-template-rows: 36rem;*/
   gap: 1.5rem;
-  margin-left: 1.5rem;
+  justify-content: center;
 }
 
 .advantages_card {
@@ -170,7 +173,8 @@ nav img {
 }
 
 .advantages_card_graphics img {
-  width: 100%;
+  width: 90%;
+  margin: 1%;
 }
 
 #advantages h2 {
@@ -486,6 +490,9 @@ html[data-theme="dark"] {
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 946px) {
+  .header_text {
+    width: 90%;
+  }
   .team_article1,
   .team_article2 {
     display: grid;
@@ -493,6 +500,7 @@ html[data-theme="dark"] {
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     text-align: center;
+    padding-top: 3rem;
   }
 
   .team_text2 {
@@ -525,5 +533,12 @@ html[data-theme="dark"] {
 
   .team_graphics2 {
     padding-left: 0rem;
+  }
+
+  nav img {
+    display: none;
+  }
+  .product_graphics {
+    width: 90%;
   }
 }
